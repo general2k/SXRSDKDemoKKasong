@@ -15,6 +15,17 @@
 		B036BAF51E66C915005FD330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B036BAF31E66C915005FD330 /* LaunchScreen.storyboard */; };
 		B036BB001E66C915005FD330 /* SXRSDKDemoKKasongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BAFF1E66C915005FD330 /* SXRSDKDemoKKasongTests.m */; };
 		B036BB0B1E66C915005FD330 /* SXRSDKDemoKKasongUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB0A1E66C915005FD330 /* SXRSDKDemoKKasongUITests.m */; };
+		B036BB191E66C934005FD330 /* SXRSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B036BB181E66C934005FD330 /* SXRSDK.framework */; };
+		B036BB1C1E66CA60005FD330 /* SXRService.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB1B1E66CA60005FD330 /* SXRService.m */; };
+		B036BB2F1E66CAE2005FD330 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB201E66CAE2005FD330 /* MainTableViewController.m */; };
+		B036BB301E66CAE2005FD330 /* ScanDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB221E66CAE2005FD330 /* ScanDeviceViewController.m */; };
+		B036BB311E66CAE2005FD330 /* GetHistoryDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB241E66CAE2005FD330 /* GetHistoryDataViewController.m */; };
+		B036BB321E66CAE2005FD330 /* HeartRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB261E66CAE2005FD330 /* HeartRateViewController.m */; };
+		B036BB331E66CAE2005FD330 /* CurrentDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB281E66CAE2005FD330 /* CurrentDataViewController.m */; };
+		B036BB341E66CAE2005FD330 /* CurrentDeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB2A1E66CAE2005FD330 /* CurrentDeviceInfoViewController.m */; };
+		B036BB351E66CAE2005FD330 /* SetDeviceParamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB2C1E66CAE2005FD330 /* SetDeviceParamViewController.m */; };
+		B036BB361E66CAE2005FD330 /* SetPersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB2E1E66CAE2005FD330 /* SetPersonInfoViewController.m */; };
+		B036BB391E671E26005FD330 /* SportDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B036BB381E671E26005FD330 /* SportDataViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,29 @@
 		B036BB061E66C915005FD330 /* SXRSDKDemoKKasongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXRSDKDemoKKasongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B036BB0A1E66C915005FD330 /* SXRSDKDemoKKasongUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXRSDKDemoKKasongUITests.m; sourceTree = "<group>"; };
 		B036BB0C1E66C915005FD330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B036BB181E66C934005FD330 /* SXRSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SXRSDK.framework; path = ../SXRSDK/Products/SXRSDK.framework; sourceTree = "<group>"; };
+		B036BB1A1E66CA60005FD330 /* SXRService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXRService.h; sourceTree = "<group>"; };
+		B036BB1B1E66CA60005FD330 /* SXRService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXRService.m; sourceTree = "<group>"; };
+		B036BB1D1E66CAB0005FD330 /* SXRSDKDemoKKasong.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXRSDKDemoKKasong.pch; sourceTree = "<group>"; };
+		B036BB1E1E66CABC005FD330 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		B036BB1F1E66CAE2005FD330 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		B036BB201E66CAE2005FD330 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		B036BB211E66CAE2005FD330 /* ScanDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanDeviceViewController.h; sourceTree = "<group>"; };
+		B036BB221E66CAE2005FD330 /* ScanDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanDeviceViewController.m; sourceTree = "<group>"; };
+		B036BB231E66CAE2005FD330 /* GetHistoryDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHistoryDataViewController.h; sourceTree = "<group>"; };
+		B036BB241E66CAE2005FD330 /* GetHistoryDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetHistoryDataViewController.m; sourceTree = "<group>"; };
+		B036BB251E66CAE2005FD330 /* HeartRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateViewController.h; sourceTree = "<group>"; };
+		B036BB261E66CAE2005FD330 /* HeartRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateViewController.m; sourceTree = "<group>"; };
+		B036BB271E66CAE2005FD330 /* CurrentDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentDataViewController.h; sourceTree = "<group>"; };
+		B036BB281E66CAE2005FD330 /* CurrentDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentDataViewController.m; sourceTree = "<group>"; };
+		B036BB291E66CAE2005FD330 /* CurrentDeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentDeviceInfoViewController.h; sourceTree = "<group>"; };
+		B036BB2A1E66CAE2005FD330 /* CurrentDeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentDeviceInfoViewController.m; sourceTree = "<group>"; };
+		B036BB2B1E66CAE2005FD330 /* SetDeviceParamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetDeviceParamViewController.h; sourceTree = "<group>"; };
+		B036BB2C1E66CAE2005FD330 /* SetDeviceParamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetDeviceParamViewController.m; sourceTree = "<group>"; };
+		B036BB2D1E66CAE2005FD330 /* SetPersonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPersonInfoViewController.h; sourceTree = "<group>"; };
+		B036BB2E1E66CAE2005FD330 /* SetPersonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPersonInfoViewController.m; sourceTree = "<group>"; };
+		B036BB371E671E26005FD330 /* SportDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportDataViewController.h; sourceTree = "<group>"; };
+		B036BB381E671E26005FD330 /* SportDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportDataViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B036BB191E66C934005FD330 /* SXRSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +116,7 @@
 		B036BAD91E66C915005FD330 = {
 			isa = PBXGroup;
 			children = (
+				B036BB181E66C934005FD330 /* SXRSDK.framework */,
 				B036BAE41E66C915005FD330 /* SXRSDKDemoKKasong */,
 				B036BAFE1E66C915005FD330 /* SXRSDKDemoKKasongTests */,
 				B036BB091E66C915005FD330 /* SXRSDKDemoKKasongUITests */,
@@ -101,10 +137,31 @@
 		B036BAE41E66C915005FD330 /* SXRSDKDemoKKasong */ = {
 			isa = PBXGroup;
 			children = (
+				B036BB1E1E66CABC005FD330 /* CommonDefine.h */,
+				B036BB1A1E66CA60005FD330 /* SXRService.h */,
+				B036BB1B1E66CA60005FD330 /* SXRService.m */,
 				B036BAE81E66C915005FD330 /* AppDelegate.h */,
 				B036BAE91E66C915005FD330 /* AppDelegate.m */,
 				B036BAEB1E66C915005FD330 /* ViewController.h */,
 				B036BAEC1E66C915005FD330 /* ViewController.m */,
+				B036BB1F1E66CAE2005FD330 /* MainTableViewController.h */,
+				B036BB201E66CAE2005FD330 /* MainTableViewController.m */,
+				B036BB211E66CAE2005FD330 /* ScanDeviceViewController.h */,
+				B036BB221E66CAE2005FD330 /* ScanDeviceViewController.m */,
+				B036BB231E66CAE2005FD330 /* GetHistoryDataViewController.h */,
+				B036BB241E66CAE2005FD330 /* GetHistoryDataViewController.m */,
+				B036BB251E66CAE2005FD330 /* HeartRateViewController.h */,
+				B036BB261E66CAE2005FD330 /* HeartRateViewController.m */,
+				B036BB271E66CAE2005FD330 /* CurrentDataViewController.h */,
+				B036BB281E66CAE2005FD330 /* CurrentDataViewController.m */,
+				B036BB291E66CAE2005FD330 /* CurrentDeviceInfoViewController.h */,
+				B036BB2A1E66CAE2005FD330 /* CurrentDeviceInfoViewController.m */,
+				B036BB2B1E66CAE2005FD330 /* SetDeviceParamViewController.h */,
+				B036BB2C1E66CAE2005FD330 /* SetDeviceParamViewController.m */,
+				B036BB2D1E66CAE2005FD330 /* SetPersonInfoViewController.h */,
+				B036BB2E1E66CAE2005FD330 /* SetPersonInfoViewController.m */,
+				B036BB371E671E26005FD330 /* SportDataViewController.h */,
+				B036BB381E671E26005FD330 /* SportDataViewController.m */,
 				B036BAEE1E66C915005FD330 /* Main.storyboard */,
 				B036BAF11E66C915005FD330 /* Assets.xcassets */,
 				B036BAF31E66C915005FD330 /* LaunchScreen.storyboard */,
@@ -118,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				B036BAE61E66C915005FD330 /* main.m */,
+				B036BB1D1E66CAB0005FD330 /* SXRSDKDemoKKasong.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -277,8 +335,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B036BAED1E66C915005FD330 /* ViewController.m in Sources */,
+				B036BB351E66CAE2005FD330 /* SetDeviceParamViewController.m in Sources */,
+				B036BB301E66CAE2005FD330 /* ScanDeviceViewController.m in Sources */,
+				B036BB391E671E26005FD330 /* SportDataViewController.m in Sources */,
+				B036BB1C1E66CA60005FD330 /* SXRService.m in Sources */,
+				B036BB321E66CAE2005FD330 /* HeartRateViewController.m in Sources */,
+				B036BB311E66CAE2005FD330 /* GetHistoryDataViewController.m in Sources */,
 				B036BAEA1E66C915005FD330 /* AppDelegate.m in Sources */,
+				B036BB2F1E66CAE2005FD330 /* MainTableViewController.m in Sources */,
 				B036BAE71E66C915005FD330 /* main.m in Sources */,
+				B036BB341E66CAE2005FD330 /* CurrentDeviceInfoViewController.m in Sources */,
+				B036BB361E66CAE2005FD330 /* SetPersonInfoViewController.m in Sources */,
+				B036BB331E66CAE2005FD330 /* CurrentDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +496,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W2694KNKE8;
+				FRAMEWORK_SEARCH_PATHS = /Users/qf/Desktop/project/ios/SXRSDK/Products;
+				GCC_PREFIX_HEADER = SXRSDKDemoKKasong/SXRSDKDemoKKasong.pch;
 				INFOPLIST_FILE = SXRSDKDemoKKasong/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.general2k.SXRSDKDemoKKasong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,7 +511,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W2694KNKE8;
+				FRAMEWORK_SEARCH_PATHS = /Users/qf/Desktop/project/ios/SXRSDK/Products;
+				GCC_PREFIX_HEADER = SXRSDKDemoKKasong/SXRSDKDemoKKasong.pch;
 				INFOPLIST_FILE = SXRSDKDemoKKasong/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.general2k.SXRSDKDemoKKasong;
 				PRODUCT_NAME = "$(TARGET_NAME)";

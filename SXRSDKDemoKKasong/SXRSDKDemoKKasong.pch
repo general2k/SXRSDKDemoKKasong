@@ -1,0 +1,17 @@
+//
+//  SXRSDKDemoKKasong.pch
+//  SXRSDKDemoKKasong
+//
+//  Created by qf on 2017/3/1.
+//  Copyright © 2017年 qf. All rights reserved.
+//
+
+#ifndef SXRSDKDemoKKasong_pch
+#define SXRSDKDemoKKasong_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SXRSDKDemoKKasong_pch */
+#import <SXRSDK/SXRSDK.h>
+#import "CommonDefine.h"
