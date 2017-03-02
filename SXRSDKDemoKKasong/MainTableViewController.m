@@ -63,6 +63,9 @@ enum {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshText) name:notify_key_did_disconnect_device object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshText) name:notify_key_did_connect_device object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openCamera) name:notify_key_did_recv_photo_control object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openMusic:) name:notify_key_did_recv_music_control object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openSOS:) name:notify_key_kkasong_did_recv_sos_request object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openFindPhone:) name:notify_key_did_recv_device_find_phone object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCmdFinish:) name:notify_key_did_finish_send_cmd object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCurrentData:) name:notify_key_kkasong_did_read_current_data object:nil];
 
@@ -345,50 +348,6 @@ enum {
 //    
 //    return topVC;
 //}
--(void)openCamera{
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:nil message:@"Recvieve Photo Control Message" preferredStyle:UIAlertControllerStyleAlert];
-    [alert showViewController:self sender:nil];
-//    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-//    if(authStatus == AVAuthorizationStatusAuthorized) {
-//        // do your logic
-//        UIViewController* contentview = [self getPresentedViewController];
-//        if ([contentview isKindOfClass:[SXRPhoto2ViewController class]] == NO){
-//            //        if (self.pickcontrol == nil){
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                SXRPhoto2ViewController* vc = [[SXRPhoto2ViewController alloc] init];
-//                [self presentViewController:vc animated:YES completion:nil];
-//                
-//            });
-//        }else{
-//        }
-//        
-//    }else if(authStatus == AVAuthorizationStatusNotDetermined){
-//        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-//            if(granted){
-//                UIViewController* contentview = [self getPresentedViewController];
-//                if ([contentview isKindOfClass:[SXRPhoto2ViewController class]] == NO){
-//                    dispatch_async(dispatch_get_main_queue(), ^{
-//                        SXRPhoto2ViewController* vc = [[SXRPhoto2ViewController alloc] init];
-//                        [self presentViewController:vc animated:YES completion:nil];
-//                        
-//                    });
-//                }
-//                
-//            } else {
-//                NSLog(@"Not granted access");
-//            }
-//        }];
-//        
-//    }else{
-//        UIAlertController* ac = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"Camera Authorization Denied!", nil) preferredStyle:UIAlertControllerStyleAlert];
-//        [ac addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-//            
-//        }]];
-//        [self presentViewController:ac animated:YES completion:nil];
-//        // impossible, unknown authorization status
-//    }
-
-}
 
 /*
 // Override to support conditional editing of the table view.
@@ -605,4 +564,83 @@ enum {
     [self presentViewController:ac animated:YES completion:nil];
 
 }
+-(void)openMusic:(NSNotification*)notify{
+    NSLog(@"openMusic::%@",notify);
+    NSDictionary* dict = notify.userInfo;
+    NSNumber* action = [dict objectForKey:NOTIFY_KEY_MUSIC_CONTROL];
+    UIAlertController* ac = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"get music control\ncurrent action =%d",action.intValue] preferredStyle:UIAlertControllerStyleAlert];
+    [ac addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:ac animated:YES completion:nil];
+
+}
+-(void)openFindPhone:(NSNotification*)notify{
+    NSLog(@"openFindPhone::%@",notify);
+    NSDictionary* dict = notify.userInfo;
+    NSNumber* action = [dict objectForKey:NOTIFY_KEY_FINDPHONE_ONOFF];
+    UIAlertController* ac = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"get find phone control \ncurrent action =%d",action.intValue] preferredStyle:UIAlertControllerStyleAlert];
+    [ac addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:ac animated:YES completion:nil];
+
+}
+-(void)openSOS:(NSNotification*)notify{
+    NSLog(@"openFindPhone::%@",notify);
+    UIAlertController* ac = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"get SOS control"] preferredStyle:UIAlertControllerStyleAlert];
+    [ac addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:ac animated:YES completion:nil];
+    
+}
+-(void)openCamera{
+    UIAlertController* ac = [UIAlertController alertControllerWithTitle:nil message:@"Recvieve Photo Control Message" preferredStyle:UIAlertControllerStyleAlert];
+    [ac addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:ac animated:YES completion:nil];
+    //    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    //    if(authStatus == AVAuthorizationStatusAuthorized) {
+    //        // do your logic
+    //        UIViewController* contentview = [self getPresentedViewController];
+    //        if ([contentview isKindOfClass:[SXRPhoto2ViewController class]] == NO){
+    //            //        if (self.pickcontrol == nil){
+    //            dispatch_async(dispatch_get_main_queue(), ^{
+    //                SXRPhoto2ViewController* vc = [[SXRPhoto2ViewController alloc] init];
+    //                [self presentViewController:vc animated:YES completion:nil];
+    //
+    //            });
+    //        }else{
+    //        }
+    //
+    //    }else if(authStatus == AVAuthorizationStatusNotDetermined){
+    //        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+    //            if(granted){
+    //                UIViewController* contentview = [self getPresentedViewController];
+    //                if ([contentview isKindOfClass:[SXRPhoto2ViewController class]] == NO){
+    //                    dispatch_async(dispatch_get_main_queue(), ^{
+    //                        SXRPhoto2ViewController* vc = [[SXRPhoto2ViewController alloc] init];
+    //                        [self presentViewController:vc animated:YES completion:nil];
+    //
+    //                    });
+    //                }
+    //
+    //            } else {
+    //                NSLog(@"Not granted access");
+    //            }
+    //        }];
+    //
+    //    }else{
+    //        UIAlertController* ac = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"Camera Authorization Denied!", nil) preferredStyle:UIAlertControllerStyleAlert];
+    //        [ac addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+    //
+    //        }]];
+    //        [self presentViewController:ac animated:YES completion:nil];
+    //        // impossible, unknown authorization status
+    //    }
+    
+}
+
 @end
